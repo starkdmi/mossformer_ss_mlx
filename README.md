@@ -7,16 +7,15 @@ Speaker separation models for extracting individual speakers from mixed audio us
 ### Python
 
 ```bash
-cd python
 pip install -r requirements.txt
 python demo.py --model 2spk --input mix.wav --output separated/
 ```
 
-See [`python/README.md`](python/README.md) for details.
+See [`Python/README.md`](python/README.md) and [`demo.py`](python/demo.py) for details.
 
 ### Swift
 
-See [`swift/README.md`](swift/README.md) and See [`swift/Tests/Demo.swift`](swift/Tests/Demo.swift) for implementation details.
+See [`Swift/README.md`](swift/README.md) and [`Demo.swift`](swift/Tests/Demo.swift) for implementation details.
 
 ## Models
 
