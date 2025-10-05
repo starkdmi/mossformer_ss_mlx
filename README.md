@@ -22,10 +22,14 @@ xcodebuild build -scheme generate -configuration Release -destination 'platform=
 
 ## Models
 
-MLX weights:
-- [starkdmi/MossFormer2_SS_2SPK_16K_MLX](https://huggingface.co/starkdmi/MossFormer2_SS_2SPK_16K_MLX) - 2-speaker at 16kHz (2spk)
-- [starkdmi/MossFormer2_SS_3SPK_8K_MLX](https://huggingface.co/starkdmi/MossFormer2_SS_3SPK_8K_MLX) - 3-speaker at 8kHz (3spk)
-- [starkdmi/MossFormer2_SS_2SPK_WHAMR_8K_MLX](https://huggingface.co/starkdmi/MossFormer2_SS_2SPK_WHAMR_8K_MLX) - 2-speaker noisy at 8kHz (2spk-whamr)
+| Model           | Language   | Speed (× faster than input) | HuggingFace |
+| --------------- | ---------- | --------------------------- | ----------- |
+| **2spk**        | Swift      | **0.92×**                   | [MossFormer2_SS_2SPK_16K_MLX](https://huggingface.co/starkdmi/MossFormer2_SS_2SPK_16K_MLX) |
+|                 | Python     | **2.0×**                    | |
+| **3spk**        | Swift      | **1.44×**                   |[MossFormer2_SS_3SPK_8K_MLX](https://huggingface.co/starkdmi/MossFormer2_SS_3SPK_8K_MLX) |
+|                 | Python     | **2.8×**                    | |
+| **2spk-whamr**  | Swift      | **1.85×**                   | [MossFormer2_SS_2SPK_WHAMR_8K_MLX](https://huggingface.co/starkdmi/MossFormer2_SS_2SPK_WHAMR_8K_MLX) |
+|                 | Python     | **3.54×**                   |             |
 
 Source: [ClearerVoice-Studio](https://github.com/modelscope/ClearerVoice-Studio)
 
