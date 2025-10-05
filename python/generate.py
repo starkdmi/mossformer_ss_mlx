@@ -291,13 +291,13 @@ if __name__ == "__main__":
         epilog="""
 Examples:
   # 2-speaker separation (16kHz)
-  python demo.py --model 2spk --input mix.wav --output separated/
+  python generate.py --model 2spk --input mix.wav --output separated/
 
   # 2-speaker WHAMR (8kHz)
-  python demo.py --model 2spk-whamr --input mix.wav --output separated/
+  python generate.py --model 2spk-whamr --input mix.wav --output separated/
 
   # 3-speaker separation (8kHz)
-  python demo.py --model 3spk --input mix.wav --output separated/
+  python generate.py --model 3spk --input mix.wav --output separated/
         """
     )
 
