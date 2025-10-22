@@ -157,7 +157,6 @@ public class ConvModule: Module {
         // Initialize with zeros like Python to ensure weights are loaded from checkpoint
         self.weight = MLXArray.zeros([channels, kernelSize, 1])
         
-        
         super.init()
     }
     
@@ -172,14 +171,11 @@ public class ConvModule: Module {
     /// - Returns: Output tensor of shape (B, T, C)
     public func callAsFunction(_ x: MLXArray) -> MLXArray {
         let residual = x  // (B, T, C)
-        
+
         // Apply depthwise convolution directly
-        
-        // Apply depthwise convolution directly
-        // MLX conv1d expects (B, T, C) which is our input format
-        let convOut = MLX.conv1d(
+        let convOut = DepthwiseConv1d.apply(
             x,
-            weight,
+            weight: weight,
             stride: 1,
             padding: padding,
             groups: inChannels
